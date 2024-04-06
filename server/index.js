@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO).then(()=>console.log('Mongodb connected')).c
 
 
 app.use('/api/user', userRoute);
-app.use('/api/user', authRoute);
+app.use('/api/auth', authRoute);
 
 //middleware to handle error
 app.use(errorMiddleware)
